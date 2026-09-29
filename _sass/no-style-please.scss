@@ -2,15 +2,21 @@
 
 // -------------- THEME SWITCHER -------------- //
 @mixin dark-appearance {
-  filter: invert(0.9);
-  img {
-    filter: invert(1);
+  filter: none;
+  background: #050505;
 
-    &.ioda { filter: invert(0); }
-  }
-  .emoji { filter: invert(1); }
-  iframe {
-    filter: invert(1);
+  .page-content {
+    filter: invert(0.9);
+
+    img {
+      filter: invert(1);
+
+      &.ioda { filter: invert(0); }
+    }
+    .emoji { filter: invert(1); }
+    iframe {
+      filter: invert(1);
+    }
   }
 }
 
